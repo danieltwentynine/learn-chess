@@ -1,0 +1,190 @@
+body {
+    font-family: "Inter", sans-serif;
+    background-color: rgb(31, 31, 31);
+}
+
+.navbar {
+    background-color: rgba(31, 31, 31, 0.5);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.navbar .navbar-brand{
+    color: #fff;
+}
+
+.navbar .nav-pills .nav-link {
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff;
+}
+
+.jumbotron {
+    background-image:url(./img/chess-board.jpg); 
+    height: 100vh;
+}
+
+.jumbo-titles {
+    color: #fff;
+}
+
+#get-started-btn {
+    background-color: #fff;
+    color: #000;
+    border: none;
+}
+
+#get-started-btn:hover {
+    border: 2px solid #000;
+}
+
+#carousel-chess-section {
+    background-color: #eee;
+}
+
+#chess-board-home-page {
+    background-color: #eee;
+}
+
+.chess-board { 
+    border-spacing: 0; 
+    border-collapse: collapse; 
+}
+
+.chess-board th { 
+    padding: .5em; 
+}
+
+.chess-board th + th { 
+    border-bottom: 1px solid #000; 
+}
+
+.chess-board th:first-child,
+.chess-board td:last-child { 
+    border-right: 1px solid #000; 
+}
+
+.chess-board tr:last-child td { 
+    border-bottom: 1px solid; 
+}
+
+.chess-board th:empty { 
+    border: none; 
+}
+
+.chess-board td { 
+    width: 1.5em; 
+    height: 1.5em; 
+    text-align: center; 
+    font-size: 32px; 
+    line-height: 0;
+}
+
+.chess-board th:hover {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.75);
+}
+
+.chess-board td:hover {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.75);
+}
+
+.chess-board .light { 
+    background: #eee; 
+}
+
+.chess-board .dark { 
+    background: #aaa; 
+}
+
+#pieces-home-page {
+    background-color: #eee;
+}
+
+#pieces-home-page .nav-pills .nav-link.active {
+    background-color: #aaa;
+    color: #000;
+}
+
+#pieces-home-page .nav-pills .nav-link {
+    color: #000;
+}
+
+.chess-piece {
+    font-size: 160px;
+    text-align: center;
+    text-shadow: 8px 8px 16px rgba(0,0,0,0.75);
+}
+
+.piece-description {
+    padding: 8px 8px;
+}
+
+#embeded-chess {
+    background-color: #eee;
+}
+
+.play-chess {
+    width:760px;
+    height:480px;
+}
+
+.play-chess p {
+    font-size: 10px;
+}
+
+.play-chess p a {
+    text-decoration: none;
+    color: #ff0000;
+}
+
+#contact {
+    background-color: #eee;
+}
+
+.social-links li {
+    list-style: none;
+    display: inline;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #000;
+}
+
+@media screen and (max-width: 767px) {
+    .jumbotron {
+        background-image:url(./img/chess-board1.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        height: 50vh;
+    }
+
+    .play-chess iframe {
+        width: 100%;
+        height: 55vh;
+    }
+
+    #contact {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .jumbotron {
+        background-image:url(./img/chess-board2.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        height: 75vh;
+    }
+
+    .play-chess iframe {
+        width: 100%;
+        height: 45vh;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .play-chess iframe {
+        width: 760px;
+        height: 480px;
+    }
+}
